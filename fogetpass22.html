@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery</title>
+    
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 800px;
+        max-width: 90%;
+    }
+    
+    .image-section {
+        background-color: #f0f4f8;
+        padding: 20px;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .image-section p {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .form-section {
+        flex: 1;
+        padding: 30px;
+    }
+    
+    .form-section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input {
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 18px;
+        background-color: #a60c61;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color:#5a5658 ;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="w.png" alt="Security" class="secure-image">
+            <p><b>Set a new password</b></p>
+        </div>
+        <div class="form-section">
+            <h1 style="color: #a60c61;">Password Recovery</h1>
+            <form>
+            
+                <input type="text" placeholder="Verification Code" required>
+                <input type="password" placeholder="New Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button class="btn" onclick="window.location.href='index.html'">Sign In</button>
+            </form>
+
+                
+
+                     
+            </form>
+        </div>
+    </div>
+</body>
+</html>

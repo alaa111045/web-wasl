@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="user.css" />
+  <link rel="shortcut icon" href="W3.png" type="image/x-icon">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #c4438a, #4b1248);
+      }
+      
+      .profile-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 10px;
+        max-width: 600px;
+        max-height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      
+      .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      
+      .profile-picture img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .profile-info h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      
+      .profile-info p {
+        font-size: 16px;
+        color: #6c757d;
+      }
+      
+      .profile-info a {
+        margin-top: 10px;
+      }
+      
+      .profile-details ul,
+      .profile-actions ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .profile-details li,
+      .profile-actions li {
+        padding: 10px 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+      
+      .profile-details li strong,
+      .profile-actions li strong {
+        color: #333;
+      }
+      
+      .profile-actions a {
+        color: #a60c61;
+        text-decoration: none;
+      }
+      
+      .profile-actions a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .footer a {
+        color: #ffffff;
+        background-color: #a60c61;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      
+      .footer a:hover {
+        background-color: #807475;
+      }
+      
+  </style>
+</head>
+<body>
+
+  <div class="container profile-container">
+    <div class="profile-header">
+      <div class="profile-picture">
+        <img src="w.png" alt="User Image" class="img-fluid" />
+      </div>
+      <div class="profile-info">
+        <h2>wasl team</h2>
+        <p>@wasl team</p>
+        <a href="edit-profile.html" class="btn btn-primary">Edit Profile</a>
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <h3>Personal Information</h3>
+      <ul>
+        <li><strong>Name:</strong> wasl team</li>
+        <li><strong>Email:</strong> wasl team@example.com</li>
+        <li><strong>Phone:</strong> +1234567890</li>
+        <li><strong>Location:</strong> Alexandria, Egypt</li>
+        <li><strong>Joined:</strong> January 2022</li>
+      </ul>
+    </div>
+
+    <div class="profile-actions">
+      <h3>Your Activities</h3>
+      <ul>
+        <li><a href="my-donations.html">My Donations</a></li>
+        <li><a href="my-projects.html">My Projects</a></li>
+        <li><a href="favorite-charities.html">Favorite Charities</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer">
+      <a href="first.html" class="btn btn-danger">Log Out</a>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

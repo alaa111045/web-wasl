@@ -1,0 +1,62 @@
+h3{
+    text-align: center;
+    margin: 50px ;
+}
+
+form{
+    text-align: center;    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+label {
+    display: block; /* لضمان أن كل تسمية تظهر في سطر منفصل */
+    font-size: 18px; /* حجم خط واضح */
+    margin-bottom: 8px; /* مسافة بين التسمية والحقل */
+    text-align: center; }
+
+button {
+    display: block; /* جعل الزر في سطر منفصل */
+    margin: 20px 15px; /* التمركز أفقيًا */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #f5f0f0;
+    background-color: #d63384;
+    border: none;
+    border-radius: 4px;
+}
+    
+.btn-primary {
+    background-color:rgb(26,72,112); 
+    border-color: rgb(26,72,112);
+}
+  
+.btn-primary:hover {
+    background-color:rgb(31,49,111);
+    border-color: rgb(31,49,111) ;
+}
+
+body {
+    background-color: #f0f8ff;  
+    justify-content: center; /* تمركز المحتوى أفقيًا */
+    align-items: center;
+    background-image: url(background.jpeg); /* ضع مسار الصورة هنا */
+    background-size: cover; /* تجعل الصورة تغطي الصفحة بالكامل */
+    background-repeat: no-repeat; /* تمنع تكرار الصورة */
+    background-position: center; 
+    color: white;
+}
+  
+input[type="email"], input[type="password"] , input[type="text"] {
+    text-align: center;
+    display: block; /* جعل الحقول تظهر في سطر منفصل */
+    width: 300px;
+    margin: 10px 20px; /* تمركز الحقول داخل الفورم */
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}

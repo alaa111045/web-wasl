@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways of Donation</title>
+    <style>
+        body {
+            background-image: url('abstrat.jpg');
+            background-size: cover;
+            background-position: bottom center; /* Make the image start from the bottom of the page */
+            background-attachment: fixed; /* Make the image fixed during scrolling */
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5em;
+            color: #e23e98;
+            font-style: italic;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding: 10px;
+        }
+
+        /* Card styles */
+        .card {
+            width: 250px;
+            height: 320px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            position: relative;
+            padding: 1.5rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.3s ease-out;
+            overflow: visible;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            display: grid;
+            place-content: center;
+            gap: 0.5em;
+        }
+
+        .card-button {
+            transform: translate(-50%, 120%);
+            width: 70%;
+            border-radius: 30px;
+            border: none;
+            background-color: #d81f8b;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 0.7rem 1.5rem;
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            opacity: 0;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            border-color: #e23e98;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 45%);
+            opacity: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .text-body {
+            color: rgb(40, 40, 40);
+            font-size: 1em;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Hover effects for button */
+        .card-button:hover {
+            background-color: #e23e98;
+            transform: translate(-50%, 45%) scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cards-container {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .card {
+                width: 80%;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ways of Donation</h1>
+
+    <div class="cards-container">
+        <!-- Vodafone Cash Card -->
+        <div class="card">
+            <img src="vodafone.jpeg" alt="Vodafone Cash">
+            <div class="card-details">
+                <p class="text-title">Vodafone Cash</p>
+                <p class="text-body">Donate easily using Vodafone Cash</p>
+            </div>
+            <button class="card-button"><a href="vodafone.html" class="btn">Donate</a></button>
+        </div>
+
+        <!-- InstaPay Card -->
+        <div class="card">
+            <img src="instapay.jpeg" alt="InstaPay">
+            <div class="card-details">
+                <p class="text-title">InstaPay</p>
+                <p class="text-body">Use InstaPay for donations</p>
+            </div>
+            <button class="card-button"><a href="instapay.html" class="btn">Donate</a></button>
+        </div>
+
+        <!-- Bank Transfer Card -->
+        <div class="card">
+            <img src="visa.jpeg" alt="Bank Transfer">
+            <div class="card-details">
+                <p class="text-title">Bank Transfer</p>
+                <p class="text-body">Donate using bank transfer</p>
+            </div>
+            <button class="card-button"><a href="bank.html" class="btn">Donate</a></button>
+        </div>
+    </div>
+
+</body>
+</html>

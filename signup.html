@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="W3.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form {
+            border: 2px solid #ddd;
+            width: 100%;
+            max-width: 450px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(209, 59, 144, 0.2);
+            background-color: #fff;
+        }
+
+        .title {
+            font-size: 36px;
+            color: #a60c61;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .title::before,
+        .title::after {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            left: 5px;
+            background-color: #a60c61;
+        }
+
+        .title::before {
+            width: 18px;
+            height: 18px;
+        }
+
+        .title::after {
+            width: 18px;
+            height: 18px;
+            animation: pulse 1s linear infinite;
+        }
+
+        .message {
+            color: #777;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            position: relative;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .form label .input {
+            width: 95%;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .form label .input:focus {
+            border-color: #a60c61;
+        }
+
+        .form label .input + span {
+            position: absolute;
+            left: 15px;
+            top: 14px;
+            color: #999;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .form label .input:focus + span {
+            top: -10px;
+            left: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            color: #a60c61;
+        }
+
+        .submit {
+            text-decoration: none;
+            width: 100%;
+            padding: 15px;
+            background-color: #a60c61;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit:hover {
+            background-color:#777;
+        }
+
+        .signin {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        .signin a {
+            color: #a60c61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signin a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <p class="title">Register</p>
+        <p class="message">Signup now and get full access to our website.</p>
+
+        <label for="firstname">
+            <input id="firstname" class="input" type="text" required>
+            <span>Firstname</span>
+        </label>
+
+        <label for="lastname">
+            <input id="lastname" class="input" type="text" required>
+            <span>Lastname</span>
+        </label>
+
+        <label for="email">
+            <input id="email" class="input" type="email" required>
+            <span>Email</span>
+        </label>
+
+        <label for="password">
+            <input id="password" class="input" type="password" required>
+            <span>Password</span>
+        </label>
+
+        <label for="confirm-password">
+            <input id="confirm-password" class="input" type="password" required>
+            <span>Confirm Password</span>
+        </label>
+
+        <button class="submit" type="button">
+            <i> <a href="index.html"class="submit">submit</a></i>
+           </button>
+
+        <p class="signin">Already have an account? <a href="signin.html">Signin</a></p>
+    </form>
+</body>
+</html>
+

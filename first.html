@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #c4438a, #4b1248);
+            
+        }
+        .hero {
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-container {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .btn {
+            background-color: white;
+            color: #a60c61;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #8a094e;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="w.png" alt="Charity Event">
+        <h1>Welcome to WASL</h1>
+        <p>Join us in making a difference. Sign in or sign up to get started.</p>
+        <div class="btn-container">
+            <button class="btn" onclick="window.location.href='signin.html'">Sign In</button>
+            <button class="btn" onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
